@@ -1,6 +1,6 @@
 <template>
   <div id="mainapp">
-  	
+  	 <Slider />
    </div>
 </template>
 

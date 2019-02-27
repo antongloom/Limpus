@@ -8,6 +8,9 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import vuescroll from 'vue-scroll'
 
+
+
+
 Vue.config.productionTip = false
 
 Vue.use(Vuelidate,VueAxios, axios, vuescroll);
