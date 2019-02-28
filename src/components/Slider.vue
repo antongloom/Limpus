@@ -19,18 +19,21 @@ export default {
                     text: '111',
                     title: '1111',
                     urlRight: require('../assets/images/bg1.jpg'),
+                    animation: 'fade'
                 },
                 {
                     id: 1,
                     text: '222',
                     title: '222',
                     urlRight: require('../assets/images/bg2.jpg'),
+                    animation: 'fade'
                 },
                 {
                     id: 2,
                     text: '333',
                     title: '3333',
                     urlRight: require('../assets/images/bg3.jpg'),
+                    animation: 'fade'
                 }
             ],
             chosenImage: 0
