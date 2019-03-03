@@ -18,22 +18,19 @@ export default {
                     id: 0,
                     text: '111',
                     title: '1111',
-                    urlRight: require('../assets/images/bg1.jpg'),
-                    animation: 'fade'
+                    urlRight: require('../assets/images/bg1.jpg')
                 },
                 {
                     id: 1,
                     text: '222',
                     title: '222',
-                    urlRight: require('../assets/images/bg2.jpg'),
-                    animation: 'fade'
+                    urlRight: require('../assets/images/bg2.jpg')
                 },
                 {
                     id: 2,
                     text: '333',
                     title: '3333',
-                    urlRight: require('../assets/images/bg3.jpg'),
-                    animation: 'fade'
+                    urlRight: require('../assets/images/bg3.jpg')
                 }
             ],
             chosenImage: 0
@@ -61,7 +58,8 @@ export default {
 <style lang="less">
 
 .slider{
-    position: relative;
+    position: absolute;
+    width: 100%;
     .slider__right{
         position: absolute;
         width: 48px;

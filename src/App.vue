@@ -1,6 +1,9 @@
 <template>
   <div id="mainapp">
-  	 <Slider />
+    <div class="main">
+        <Slider />
+        <Slider />
+    </div>
    </div>
 </template>
 
@@ -22,7 +25,9 @@ export default {
 @import url('./assets/stylus/main.less');
 @import url('./assets/stylus/animation.less');
 
-
+.main{
+  position: relative;
+}
 
 </style>
 

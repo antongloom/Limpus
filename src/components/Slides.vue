@@ -1,6 +1,6 @@
 <template>
 
-<transition-group :name="image.animation"  class="slides"  tag="div" id="slides">
+<transition-group name="fade"  class="slides"  tag="div" id="slides">
    
      <div class="slides__image" :style="setBackgroundImage" :key="image.id"></div>
 
