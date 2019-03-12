@@ -8,31 +8,13 @@
 <script>
 import Slides from "./Slides.vue";
 export default {
+   props: ["block"],
    components: {
       Slides    
    },
    data(){
         return{
-            images: [
-               {
-                    id: 0,
-                    text: '111',
-                    title: '1111',
-                    urlRight: require('../assets/images/bg1.jpg')
-                },
-                {
-                    id: 1,
-                    text: '222',
-                    title: '222',
-                    urlRight: require('../assets/images/bg2.jpg')
-                },
-                {
-                    id: 2,
-                    text: '333',
-                    title: '3333',
-                    urlRight: require('../assets/images/bg3.jpg')
-                }
-            ],
+            images: this.block,
             chosenImage: 0
         }
    },
@@ -47,10 +29,10 @@ export default {
             flag = 0;
         }
         this.chosenImage = flag;
-      }
+    }
    },
    created(){
-       
+
    }
 }
 </script>
