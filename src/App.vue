@@ -1,18 +1,25 @@
 <template>
   <div id="mainapp" class="mainapp">
        <!-- <Slider /> -->
-        <Slider :block="block[chosenBlock]" /> 
-        <div @click="arrowBottom" class="b">1111111111</div>
+        <Slider v-if="check" :block="block[0]"/> 
+        <div v-else>
+            <Slider :block="block[1]" /> 
+        </div>
+      
+        <div  class="b">1111111111</div>
+        <button class="b" @click="check = !check">2222</button>
   </div>
 </template>
 
 <script>
 import Slider from "./components/Slider.vue";
 export default {
+  components :{
+    Slider
+  },
   data () {
 	    return {
-	      componentVue: 'Slider',
-
+        check: true,
         block:[
            [
                {
@@ -49,12 +56,9 @@ export default {
                 }
             ]
         ],
-        chosenBlock: 0
+        chosenBlock: 0,
       }	
   	},
-  components :{
-    Slider
-  },
   methods:{
    arrowBottom(){
      this.move(); 
@@ -81,6 +85,7 @@ export default {
 }
 .b{
   position: absolute;
+  z-index: 2000;
 }
 </style>
 
