@@ -40,7 +40,7 @@ export default {
 <style lang="less">
 
 .slider{
-    position: absolute;
+    position: relative;
     width: 100%;
     .slider__right{
         position: absolute;

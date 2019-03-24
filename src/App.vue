@@ -24,35 +24,51 @@ export default {
                     title: 'сделать ваш дом ярче',
                     textFirst: 'Более 45 лет мы создаем решения для создания по настоящему комфортабельного и надежного дома, из года в год отличающиеся инновационными технологиями и уникальным дизайном.',
                     textSecond: 'Стран, в которых есть продукция Schüco',
-                    textThree: '',
-                    numberFirst: '',
-                    numberSecond: '',
+                    textThree: 'Год основания компании',
+                    numberFirst: '80',
+                    numberSecond: '1951',
                     urlRight: require('./assets/images/bg1.jpg')
                 },
                 {
                     id: 1,
-                    text: '222',
-                    title: '222',
+                    title: 'сохранить ваше тепло',
+                    textFirst: 'Наша главная ценность — качество наших решений. Мы заботимся о повышении энергоэффективности и сохранении уюта и точно знаем, как сберечь красоту и тепло вашего дома.',
+                    textSecond: 'Сотрудников трудятся в нашей компании',
+                    textThree: 'Из них работает в Германии',
+                    numberFirst: '4700',
+                    numberSecond: '3300',
                     urlRight: require('./assets/images/bg2.jpg')
                 },
                 {
                     id: 2,
-                    text: '333',
-                    title: '3333',
+                    title: 'обезопасить вас',
+                    textFirst: 'Постоянно обмениваясь опытом с нашими партнерами, мы предлагаем «умные» оконные и дверные системы, отвечающие всем современным стандартам комфорта, безопасности и энергоэффективности.',
+                    textSecond: 'Миллиарда евро оборот компании за 2016 год',
+                    textThree: 'Компаний-партнеров, по всему миру',
+                    numberFirst: '1,5',
+                    numberSecond: '1200',
                     urlRight: require('./assets/images/bg3.jpg')
                 }
              ],
              [
                {
-                    id: 0,
-                    text: '444',
-                    title: '444',
+                    id: 3,
+                    title: 'обезопасить вас',
+                    textFirst: 'Постоянно обмениваясь опытом с нашими партнерами, мы предлагаем «умные» оконные и дверные системы, отвечающие всем современным стандартам комфорта, безопасности и энергоэффективности.',
+                    textSecond: 'Миллиарда евро оборот компании за 2016 год',
+                    textThree: 'Компаний-партнеров, по всему миру',
+                    numberFirst: '1,5',
+                    numberSecond: '1200',
                     urlRight: require('./assets/images/bg4.jpg')
                 },
                 {
-                    id: 1,
-                    text: '555',
-                    title: '555',
+                    id: 4,
+                    title: 'обезопасить вас',
+                    textFirst: 'Постоянно обмениваясь опытом с нашими партнерами, мы предлагаем «умные» оконные и дверные системы, отвечающие всем современным стандартам комфорта, безопасности и энергоэффективности.',
+                    textSecond: 'Миллиарда евро оборот компании за 2016 год',
+                    textThree: 'Компаний-партнеров, по всему миру',
+                    numberFirst: '1,5',
+                    numberSecond: '1200',
                     urlRight: require('./assets/images/bg5.jpg')
                 }
             ]
@@ -69,12 +85,12 @@ export default {
 .mainapp{
   position: relative;
   .mainapp__btn{
-    width: 32px;
-    height: 48px;
+    width: 48px;
+    height: 32px;
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: 4.5px;
     position: absolute;
-    top: 48px;
+    bottom: 48px;
     left: 60px;
     z-index: 1000;
     cursor: pointer;
@@ -101,6 +117,8 @@ export default {
     }
   }
 }
+
+
 
 </style>
 
