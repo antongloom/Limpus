@@ -1,13 +1,10 @@
 <template>
   <div id="mainapp" class="mainapp">
-       <!-- <Slider /> -->
-        <Slider v-if="check" :block="block[0]"/> 
+        <Slider v-if="flag" :block="block[0]"/>
         <div v-else>
-            <Slider :block="block[1]" /> 
+          <Slider :block="block[1]"/>
         </div>
-      
-        <div  class="b">1111111111</div>
-        <button class="b" @click="check = !check">2222</button>
+        <div class="mainapp__btn" @click="flag = !flag"></div>
   </div>
 </template>
 
@@ -19,13 +16,17 @@ export default {
   },
   data () {
 	    return {
-        check: true,
+        flag: true,
         block:[
            [
                {
                     id: 0,
-                    text: '111',
-                    title: '1111',
+                    title: 'сделать ваш дом ярче',
+                    textFirst: 'Более 45 лет мы создаем решения для создания по настоящему комфортабельного и надежного дома, из года в год отличающиеся инновационными технологиями и уникальным дизайном.',
+                    textSecond: 'Стран, в которых есть продукция Schüco',
+                    textThree: '',
+                    numberFirst: '',
+                    numberSecond: '',
                     urlRight: require('./assets/images/bg1.jpg')
                 },
                 {
@@ -44,35 +45,20 @@ export default {
              [
                {
                     id: 0,
-                    text: '111',
-                    title: '1111',
+                    text: '444',
+                    title: '444',
                     urlRight: require('./assets/images/bg4.jpg')
                 },
                 {
                     id: 1,
-                    text: '222',
-                    title: '222',
+                    text: '555',
+                    title: '555',
                     urlRight: require('./assets/images/bg5.jpg')
                 }
             ]
-        ],
-        chosenBlock: 0,
+        ]
       }	
-  	},
-  methods:{
-   arrowBottom(){
-     this.move(); 
-    },
-    move(){
-       var flag = this.chosenBlock;
-        flag++;
-        if(flag>=this.block.length){
-            flag = 0;
-        }
-        this.chosenBlock = flag;
-        console.log(this.chosenBlock)
-    }
-  }
+  	}
 }
 </script>
 
@@ -82,10 +68,39 @@ export default {
 
 .mainapp{
   position: relative;
+  .mainapp__btn{
+    width: 32px;
+    height: 48px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4.5px;
+    position: absolute;
+    top: 48px;
+    left: 60px;
+    z-index: 1000;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-image: url(./assets/images/arrow-right.svg);
+      background-position: 79.93827160493827% 16.89189189189189%;
+      width: 20px;
+      height: 20px;
+      -webkit-transition: .35s ease all;
+      transition: .35s ease all;
+    }
+    &:hover{
+      border: 2px solid #fff;
+    }
+  }
 }
-.b{
-  position: absolute;
-  z-index: 2000;
-}
+
 </style>
 

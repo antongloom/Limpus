@@ -71,9 +71,6 @@ export default {
           height: 20px;
           -webkit-transition: .35s ease all;
           transition: .35s ease all;
-          &:hover{
-          left: 12px;
-          }
         }
         &:hover{
           border: 2px solid #fff;
